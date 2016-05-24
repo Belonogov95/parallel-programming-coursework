@@ -4,6 +4,10 @@ import java.io.*;
 import java.net.*;
 import java.nio.*;
 import java.nio.channels.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.*;
 
 public class Main {
@@ -86,14 +90,19 @@ public class Main {
         }
     }
 
-    static public void main(String args[]) throws Exception {
+    static public void main(String args[]) {
 
         if (args.length == 1) {
 
         }
-        ArrayList < Integer > listIp = new ArrayList<>();
+        ArrayList<Integer> listIp = new ArrayList<>();
         listIp.add(4444);
         int timeout = 100;
+//        try (BufferedWriter bf = new BufferedWriter(new FileWriter("test.txt"))){
+//            bf.write("yyyy!!!!");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
         //System.out.println(Integer.valueOf("   010   ".trim()));
 

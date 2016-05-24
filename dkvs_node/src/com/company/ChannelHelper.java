@@ -24,6 +24,10 @@ public class ChannelHelper {
         this.id = id;
     }
 
+    public void setsBuilder(StringBuilder sBuilder) {
+        this.sBuilder = sBuilder;
+    }
+
     public ByteBuffer getBuffer() {
         return buffer;
     }
